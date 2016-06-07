@@ -7,7 +7,7 @@ fi
 
 if [ $UID ]; then
     if ! id $UID >/dev/null 2>&1; then
-        useradd --shell /bin/bash --create-home --home-dir /repos --uid $UID --gid www-data ungit
+        useradd --shell /bin/bash --create-home --home-dir /repo --uid $UID --gid www-data ungit
     fi
 umask 0002
 exec gosu $UID "$@"

@@ -21,7 +21,7 @@ COPY entrypoint.sh /
 
 EXPOSE 8448
 
-VOLUME /repos
+VOLUME /repo
 
 ENTRYPOINT ["/entrypoint.sh"]
 
