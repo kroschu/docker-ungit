@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y git \
     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc \
     && chmod +x /usr/local/bin/gosu \
     && gosu nobody true \
-    && apt-get purge -y --auto-remove ca-certificates wget
+    && apt-get purge -y --auto-remove wget
 
 COPY entrypoint.sh /
 
